@@ -1,0 +1,155 @@
+
+/*------------------------------------*\
+    #DIVINE NUMBERS
+\*------------------------------------*/
+
+$phi: 1.6180339887498948482;
+
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+
+$breakpoint-1: 320px;// ~ iPhone 5
+$breakpoint-2: 414px;// ~ iPhone 7 +
+$breakpoint-3: 768px;// ~ iPad
+$breakpoint-4: 1024px;// ~ Desktop small
+$breakpoint-5: 1600px;// ~ Desktop large
+
+$maximum-page-width: $breakpoint-4;
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+$spacing-full: 30px;
+$spacing-half: 15px;
+$spacing-quarter: 7px;
+$spacing-eighth: 4px;
+$spacing-sixteenth: 2px;
+$spacing-double: 60px;
+$spacing-triple: 90px;
+$spacing-quadruple: 120px;
+
+/*------------------------------------*\
+    #DIMENSION
+\*------------------------------------*/
+
+$dimension-full: 40px;
+$dimension-half: 20px;
+$dimension-quarter: 10px;
+$dimension-eighth: 5px;
+$dimension-sixteenth: 3px;
+$dimension-double: 80px;
+$dimension-triple: 120px;
+
+/*------------------------------------*\
+    #Go!
+\*------------------------------------*/
+
+body {
+	position: relative;
+}
+
+#page_body {
+	position: relative;
+}
+
+.section {
+	width: 100%;
+	//border: 1px solid pink;
+}
+
+.container {
+	width: 100%;
+	max-width: $maximum-page-width;
+	margin: 0 auto;
+	padding: 0 $spacing-full;
+	//border: 1px solid orange;
+}
+
+//Layout helpers --
+
+//Layout 50 50
+
+.layout_50-50 {
+
+	.column {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: $breakpoint-2){
+
+	html {
+		overflow: auto;
+	}
+
+	body {
+		height: auto;
+		min-height: 100%;
+
+		.container {
+			padding: 0 $spacing-double;
+		}	
+	}
+}
+
+@media only screen and (min-width: $breakpoint-3){
+	
+	body {
+
+		.container {
+			min-width: $breakpoint-3;
+		}
+
+		//Layout helpers --
+
+		//Layout 50 50
+
+		.layout_50-50 {
+
+			&:after {
+				content: " ";
+				display: table;
+				clear: both;
+			}
+
+			.column {
+				width: calc(50% - #{$spacing-half});
+				float: left;
+				margin-right: $spacing-full;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $breakpoint-4){
+	
+	body {
+
+		.container {
+			min-width: $breakpoint-4;
+		}
+	}
+}
+
+
+@media only screen and (min-width: $breakpoint-5){
+
+	body {
+
+		.container {
+			padding: 0 $spacing-full;
+
+		}
+	}
+}
+
+
+
+
+

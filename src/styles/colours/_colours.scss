@@ -1,0 +1,103 @@
+
+/*------------------------------------*\
+    #COLOURS
+\*------------------------------------*/
+
+//Raw palette --
+
+$pattern-black: #270504;
+$brand-1: $pattern-black;
+
+$pattern-offblack: #4a4040;
+$brand-2: $pattern-offblack;
+
+$pattern-white: #ffffff;
+$brand-3: $pattern-white;
+
+$pattern-offwhite: #fdfdfd;
+$brand-4: $pattern-offwhite;
+
+$pattern-grey-1: #6c6967;
+$brand-5: $pattern-grey-1;
+
+$pattern-grey-2: #b7a6a3;
+$brand-6: $pattern-grey-2;
+
+$pattern-green-1: #99ec6a;
+$brand-7: $pattern-green-1;
+
+$pattern-blue-1: #298791;
+$brand-8: $pattern-blue-1;
+
+$pattern-red-1: #b91438;
+$brand-9: $pattern-red-1;
+
+$pattern-orange-1: #f55c16;
+$brand-10: $pattern-orange-1;
+
+$pattern-pink-1: #ed67a4;
+$brand-11: $pattern-pink-1;
+
+$pattern-purple-1: #840c39;
+$brand-12: $pattern-purple-1;
+
+
+//Utility
+
+$pattern-golden-fore: rgba(218, 165, 32, 1);
+$pattern-golden-back: rgba(218, 165, 32, .2);
+
+$pattern-success-fore: green;
+$pattern-success-back: lightgreen;
+
+$pattern-error-fore: red;
+$pattern-error-back: pink;
+
+
+//Functional palette --
+
+$background-colour-1: $brand-2;
+$background-colour-2: $brand-3;
+$background-colour-3: $brand-4;
+
+$text-colour-1: $brand-2;
+$text-colour-2: $brand-3;
+$text-colour-3: $brand-4;
+
+$line-colour-1: $brand-5;
+$line-colour-2: $brand-6;
+$line-colour-3: $brand-4;
+$shadow-colour-1: $brand-1;
+
+$link-colour: $brand-11;
+$link-colour-hover: $brand-11;
+
+$primary-button-background: $link-colour;
+$primary-button-background-hover: $link-colour-hover;
+$primary-button-background-disabled: $brand-5;
+$primary-button-border: $link-colour;
+$primary-button-border-hover: $link-colour-hover;
+$primary-button-border-disabled: $brand-5;
+$primary-button-colour: $brand-3;
+$primary-button-colour-hover: $brand-3;
+$primary-button-colour-disabled: $brand-3;
+
+$secondary-button-background: transparent;
+$secondary-button-background-hover: transparent;
+$secondary-button-background-disabled: transparent;
+$secondary-button-border: $brand-1;
+$secondary-button-border-hover: $brand-7;
+$secondary-button-border-disabled: $brand-5;
+$secondary-button-colour: $brand-1;
+$secondary-button-colour-hover: $brand-7;
+$secondary-button-colour-disabled: $brand-5;
+
+
+
+
+
+
+
+
+
+

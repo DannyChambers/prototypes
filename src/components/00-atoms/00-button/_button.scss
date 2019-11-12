@@ -1,0 +1,70 @@
+//Atoms/Button
+
+.button {
+	display: inline-block;
+	background: $primary-button-background;
+	color: $primary-button-colour;
+	height: calc(#{$dimension-full} + 2px);
+	padding: 0 $spacing-full;
+	line-height: $dimension-full;
+	border: 2px solid $primary-button-border;
+	text-align: center;
+	white-space: nowrap;
+	font-family: $font-family-bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+
+	&:hover {
+		background: lighten($primary-button-background, 10%);
+		border-color: lighten($primary-button-background, 10%);
+		color: $primary-button-colour-hover;
+	}
+
+	&.is-disabled {
+		background: $primary-button-background-disabled;
+		border: 2px solid $primary-button-border-disabled;
+		color: $primary-button-colour-disabled;
+		cursor: not-allowed;
+		pointer-events: none;
+
+		&:hover {
+			background: $primary-button-background-disabled;
+			color: $primary-button-colour-disabled;
+		}
+	}
+
+	&--secondary {
+		background-color: $secondary-button-background;
+		border: 2px solid $secondary-button-border;
+		color: $secondary-button-colour;
+
+		&:hover {
+			background-color: $secondary-button-background-hover;
+			border: 2px solid $secondary-button-border-hover;
+			color: $secondary-button-colour-hover;
+		}
+
+		&.is-disabled {
+			background: $secondary-button-background-disabled;
+			color: $secondary-button-colour-disabled;
+			cursor: not-allowed;
+			pointer-events: none;
+
+			&:hover {
+				background: $secondary-button-background-disabled;
+				color: $secondary-button-colour-disabled;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.button {
+		width: auto;
+	}
+}
+

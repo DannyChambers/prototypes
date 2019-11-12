@@ -1,0 +1,188 @@
+
+
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+
+//Visibiity --
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.visually-hidden--2 {
+    visibility: hidden;
+}
+
+//Alignment --
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+//Text alignment (General) --
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-centre {
+	text-align: center !important;
+}
+
+//Text alignment (Small only) --
+
+@media only screen and (max-width : $breakpoint-1){
+
+    .text-left-sml {
+        text-align: left;
+    }
+
+    .text-right-sml {
+        text-align: right;
+    }
+
+    .text-centre-sml {
+        text-align: center;
+    }
+}
+
+
+//Text alignment (Medium only) --
+
+@media only screen and (min-width : $breakpoint-1 ) and (max-width: 1023px){
+
+    .text-left-mdm {
+        text-align: left;
+    }
+
+    .text-right-mdm {
+        text-align: right;
+    }
+
+    .text-centre-mdm {
+        text-align: center;
+    }
+}
+
+//Text alignment (Large only) --
+
+@media only screen and (min-width: $breakpoint-3){
+
+    .text-left-lrg {
+        text-align: left;
+    }
+
+    .text-right-lrg {
+        text-align: right;
+    }
+
+    .text-centre-lrg {
+        text-align: center;
+    }
+}
+
+//Text general --
+
+.text--ownline {
+    display: block
+}
+
+//Viewport display --
+
+.x-sml {
+    display: inline-block;
+}
+
+.sml {
+	display: none;
+}
+
+.mdm {
+	display: none;
+}
+
+.lrg {
+	display: none;
+}
+
+.x-lrg {
+    display: none;
+}
+
+@media only screen and (max-width : $breakpoint-1){
+
+	.x-sml {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.sml {
+		display: inline-block;
+	}
+
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+    .mdm {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width : $breakpoint-4){
+
+    .lrg {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width : $breakpoint-5){
+
+    .x-lrg {
+        display: inline-block;
+    }
+
+}
+
+//Skip to link --
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
