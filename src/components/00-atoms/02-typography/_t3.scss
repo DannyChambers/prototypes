@@ -1,0 +1,11 @@
+
+.t3 {
+	font-size: 1.4rem;
+}
+
+@media only screen and (min-width : $breakpoint-4){
+
+	.t3 {
+		font-size: 1.6rem;
+	}
+}

@@ -1,0 +1,16 @@
+
+.textarea {
+	width: 100%;
+	padding: $spacing-quarter;
+	border: 1px solid $line-colour-1;
+	background: $background-colour-1;
+	font-family: $font-family-regular;
+	height: $dimension-quadruple;
+	-webkit-appearance: none;
+	resize: none;
+
+	&:focus {
+		border-color: $link-colour;
+	}
+}
+

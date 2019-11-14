@@ -1,0 +1,13 @@
+
+.h3  {
+	font-family: $font-family-heading;
+	color: $text-colour-1; 
+	font-size: 2rem;
+}
+
+@media only screen and (min-width : $breakpoint-4){
+
+	.h3  {
+		font-size: 3.1rem;
+	}
+}

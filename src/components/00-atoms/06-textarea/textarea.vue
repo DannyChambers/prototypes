@@ -1,32 +1,32 @@
 <template>
-  <button :class="classes">
-    {{text}}
-  </button>
+  <textarea :class="classes" :id="inputID" />
 </template>
 
 <script>
   export default {
-    name: 'Button',
+    name: 'TextInput',
     props: {
-      variant: String,
-      text: {
+      classList:{
+        type: String,
+        default: "",
+      },
+      inputID: {
         type: String,
         required: true
       }
     },
     computed: {
       classes() {
-        return `button button--${this.variant}`;  
+        return `textarea ${this.classList}`;  
       },
     },
     methods: {
       onClick() {
-        this.$emit('click')
       }
     }
   }
 </script>
 
 <style lang="scss">
-  @import "./_button.scss";
+  @import "./_textarea.scss";
 </style>

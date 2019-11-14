@@ -1,0 +1,141 @@
+
+
+.icon--before, .icon--after {
+
+	&:before, &:after {
+		content: " ";
+		margin: 0 $spacing-quarter 0 0;
+		font-family: $font-family-icon;
+	}
+
+	&:after {
+		margin: 0 0 0 $spacing-quarter;
+	}
+
+	&.icon--github {
+		
+		&:before, &:after {
+			content: "\eab0"; 
+		}
+	}
+
+	&.icon--twitter {
+		
+		&:before, &:after {
+			content: "\f099"; 
+		}
+	}
+
+	&.icon--facebook {
+		
+		&:before, &:after {
+			content: "\f09a"; 
+		}
+	}
+
+	&.icon--linkedin {
+		
+		&:before, &:after {
+			content: "\f0e1"; 
+		}
+	}
+
+	&.icon--checkmark {
+		
+		&:before, &:after {
+			content: "\e901"; 
+		}
+	}
+
+	&.icon--cheveron {
+		
+		&:before, &:after {
+			content: "\e902"; 
+		}
+	}
+
+	&.icon--close {
+		
+		&:before, &:after {
+			content: "\e904"; 
+		}
+	}
+
+	&.icon--menu {
+		
+		&:before, &:after {
+			content: "\e900"; 
+		}
+	}
+
+	&.icon--envelope {
+		
+		&:before, &:after {
+			content: "\e905"; 
+		}
+	}
+
+	&.icon--mood-happy-outline {
+		
+		&:before, &:after {
+			content: "\e907"; 
+		}
+	}
+
+	&.icon--mood-neutral-outline {
+		
+		&:before, &:after {
+			content: "\e908"; 
+		}
+	}
+
+	&.icon--mood-sad-outline {
+		
+		&:before, &:after {
+			content: "\e909"; 
+		}
+	}
+
+	&.icon--search {
+		
+		&:before, &:after {
+			content: "\e90b"; 
+		}
+	}
+
+}
+
+.icon--before {
+
+	&:after {
+		display: none;
+	}
+
+}
+
+.icon--after {
+
+	&:before {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,14 +1,18 @@
+
 <template>
-  <button :class="classes">
+  <p :class="classes">
     {{text}}
-  </button>
+  </p>
 </template>
 
 <script>
   export default {
-    name: 'Button',
+    name: 'T2',
     props: {
-      variant: String,
+      classList:{
+        type: String,
+        default: "",
+      },
       text: {
         type: String,
         required: true
@@ -16,17 +20,15 @@
     },
     computed: {
       classes() {
-        return `button button--${this.variant}`;  
+        return `t2 ${this.classList}`;
       },
     },
     methods: {
-      onClick() {
-        this.$emit('click')
-      }
     }
   }
 </script>
 
 <style lang="scss">
-  @import "./_button.scss";
+  @import "./_t2.scss";
 </style>
+

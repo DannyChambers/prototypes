@@ -1,32 +1,32 @@
 <template>
-  <button :class="classes">
-    {{text}}
-  </button>
+  <input type="text" :class="classes" :id="inputID" />
 </template>
 
 <script>
   export default {
-    name: 'Button',
+    name: 'TextInput',
     props: {
-      variant: String,
-      text: {
+      classList:{
+        type: String,
+        default: "",
+      },
+      inputID: {
         type: String,
         required: true
-      }
+      },
     },
     computed: {
       classes() {
-        return `button button--${this.variant}`;  
+        return `text_input ${this.classList}`;  
       },
     },
     methods: {
       onClick() {
-        this.$emit('click')
       }
     }
   }
 </script>
 
 <style lang="scss">
-  @import "./_button.scss";
+  @import "./_text_input.scss";
 </style>

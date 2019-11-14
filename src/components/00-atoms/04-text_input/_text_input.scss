@@ -1,0 +1,15 @@
+.text_input {
+	width: 100%;
+	padding: $spacing-quarter;
+	border: 1px solid $line-colour-1;
+	background: $background-colour-1;
+	line-height: $dimension-full;
+	font-family: $font-family-regular;
+	height: $dimension-full;
+	-webkit-appearance: none;
+
+	&:focus {
+		border-color: $link-colour;
+	}
+}
+

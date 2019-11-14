@@ -1,0 +1,55 @@
+
+.button_group {
+	width: 100%;
+
+	.button {
+		display: inline-block;
+		margin: 0 0 $spacing-full 0;
+	}
+}
+
+
+@media only screen and (min-width : $breakpoint-2){
+
+
+	.button_group {
+
+		&.button_group--left {
+			text-align: left;
+
+			.button {
+				margin: 0 $spacing-full $spacing-full 0;
+			}
+		}
+
+		&.button_group--centre {
+			text-align: center;
+
+			.button {
+				margin: 0 $spacing-half $spacing-full 0;
+			}
+
+		}
+
+		&.button_group--right {
+			text-align: right;
+
+			.button {
+				margin: 0 0 $spacing-full $spacing-full;
+			}
+		}
+
+		&.button_group--fullwidth {
+			display: flex;
+
+			.button {
+				flex: 1 1 100%;
+				margin-bottom: $spacing-full;
+
+				&:first-child {
+					margin-right: $spacing-full;
+				}
+			}
+		}
+	}
+}

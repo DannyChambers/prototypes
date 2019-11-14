@@ -1,14 +1,18 @@
+
 <template>
-  <button :class="classes">
+  <h5 :class="classes">
     {{text}}
-  </button>
+  </h5>
 </template>
 
 <script>
   export default {
-    name: 'Button',
+    name: 'H5',
     props: {
-      variant: String,
+      classList:{
+        type: String,
+        default: "",
+      },
       text: {
         type: String,
         required: true
@@ -16,17 +20,15 @@
     },
     computed: {
       classes() {
-        return `button button--${this.variant}`;  
+        return `h5 ${this.classList}`;
       },
     },
     methods: {
-      onClick() {
-        this.$emit('click')
-      }
     }
   }
 </script>
 
 <style lang="scss">
-  @import "./_button.scss";
+  @import "./_h5.scss";
 </style>
+
