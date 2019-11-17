@@ -38,7 +38,8 @@
 			display: block;
 			width: $dimension-half;
 			height: $dimension-half;
-			line-height: $dimension-half;
+			line-height: calc(#{$dimension-half} + 1px);
+			text-indent: 1px;
 			text-align: center;	
 			border: 1px solid $line-colour-1;
 			background: $background-colour-1;

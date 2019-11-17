@@ -1,13 +1,14 @@
 
-$form-error: $brand-9;
+$form-valid: green;
+$form-invalid: $brand-9;
 
 .form {
-	max-width: $breakpoint-2;
 	margin: 0 auto;
-	padding: $spacing-full;
+	padding: $spacing-half;
 	background: $background-colour-1;
 
 	&.form--linear {
+		max-width: $breakpoint-2;
 
 		.fieldset {
 			padding-top: $spacing-half;
@@ -38,16 +39,28 @@ $form-error: $brand-9;
 				&[data-valid], &[data-invalid] {
 
 					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $form-error;
+						border-color: $active-colour;
 					}
 
 					&:after {
-						content: attr(data-invalid);
+						content: attr(data-valid);
 						display: block;
 						font-family: $font-family-semibold;
 						font-size: 1.4rem;
 						line-height: 3rem;
-						color: $form-error;
+						color: $form-valid;
+					}
+				}
+
+				&[data-invalid] {
+
+					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+						border-color: $form-invalid;
+					}
+
+					&:after {
+						content: attr(data-invalid);
+						color: $form-invalid;
 					}
 				}
 			}
@@ -55,6 +68,7 @@ $form-error: $brand-9;
 	}
 
 	&.form--infield {
+		max-width: $breakpoint-2;
 
 		.fieldset {
 			padding-top: $spacing-half;
@@ -75,7 +89,7 @@ $form-error: $brand-9;
 		.fieldset_inner {
 
 			.label {
-				padding: $spacing-half $spacing-full $spacing-half $spacing-full;
+				padding: $spacing-half $spacing-full;
 				background: $background-colour-1;
 				border: 1px solid $line-colour-2;
 				border-bottom: none;
@@ -93,24 +107,43 @@ $form-error: $brand-9;
 					margin-bottom: $spacing-half;
 				}
 
-				.radio_button, .checkbox {
-					float: left;
-					margin: 9px $spacing-quarter 0 0;
+				&.label--checkbox, &.label--radio {
+					line-height: 2.4rem;
+					padding-left: calc(#{$spacing-full} + 30px);
+					position: relative;
+
+					.checkbox, .radio_button {
+						position: absolute;
+						top: $spacing-half;
+						left: $spacing-full;
+					}
 				}
 
 				&[data-valid], &[data-invalid] {
 
 					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $form-error;
+						border-color: $active-colour;
 					}
 
 					&:after {
-						content: attr(data-invalid);
+						content: attr(data-valid);
 						display: block;
 						font-family: $font-family-semibold;
 						font-size: 1.4rem;
 						line-height: 3rem;
-						color: $form-error;
+						color: $form-valid;
+					}
+				}
+
+				&[data-invalid] {
+
+					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+						border-color: $form-invalid;
+					}
+
+					&:after {
+						content: attr(data-invalid);
+						color: $form-invalid;
 					}
 				}
 			}
@@ -118,7 +151,33 @@ $form-error: $brand-9;
 	}
 }
 
+@media only screen and (min-width : $breakpoint-2){
 
+	.form {
+		padding: $spacing-full;
+
+		&.form--linear {
+
+			.fieldset_inner {
+
+				.label {
+					margin-bottom: $spacing-half;
+					overflow: hidden;
+				}
+			}
+		}
+
+		&.form--infield {
+
+			.fieldset_inner {
+
+				.label {
+					padding: $spacing-half $spacing-full;
+				}
+			}
+		}
+	}
+}
 
 
 

@@ -19,8 +19,8 @@ storiesOf('Components/Organisms/Form', module)
 			    	<fieldset class="fieldset">
 			    		<legend class="legend">Personal details</legend>
 			    		<div class="fieldset_inner">
-					    	<Label text="First name">
-					    		<TextInput />
+					    	<Label text="First name" data-valid="Complete.">
+					    		<TextInput value="Marla" />
 					    	</Label>
 					    	<Label text="Last name" data-invalid="This field is required">
 					    		<TextInput />
@@ -38,13 +38,13 @@ storiesOf('Components/Organisms/Form', module)
 			    		<legend class="legend">Marketing preferences</legend>
 			    		<div class="fieldset_inner">
 							<fieldset class="fieldgroup">
-						    	<Label text="Recieve offers from us">
+						    	<Label text="Recieve offers from us" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve offers from third parties">
+						    	<Label text="Recieve offers from third parties" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve no marketing">
+						    	<Label text="Recieve no marketing" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
 							</fieldset>
@@ -54,7 +54,7 @@ storiesOf('Components/Organisms/Form', module)
 			    	<fieldset class="fieldset">
 			    		<legend class="legend visually-hidden">Terms and Conditions</legend>
 			    		<div class="fieldset_inner">
-					    	<Label text="I agree to the Terms and Conditions">
+					    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
 					    		<Checkbox groupname="group_1" />
 					    	</Label>
 						</div>
@@ -75,8 +75,8 @@ storiesOf('Components/Organisms/Form', module)
 			    	<fieldset class="fieldset">
 			    		<legend class="legend">Personal details</legend>
 			    		<div class="fieldset_inner">
-					    	<Label text="First name">
-					    		<TextInput />
+					    	<Label text="First name" data-valid="Complete.">
+					    		<TextInput value="Marla" />
 					    	</Label>
 					    	<Label text="Last name" data-invalid="This field is required">
 					    		<TextInput />
@@ -94,13 +94,13 @@ storiesOf('Components/Organisms/Form', module)
 			    		<legend class="legend">Marketing preferences</legend>
 			    		<div class="fieldset_inner">
 							<fieldset class="fieldgroup">
-						    	<Label text="Recieve offers from us">
+						    	<Label text="Recieve offers from us" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve offers from third parties">
+						    	<Label text="Recieve offers from third parties" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve no marketing">
+						    	<Label text="Recieve no marketing" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
 							</fieldset>
@@ -110,7 +110,7 @@ storiesOf('Components/Organisms/Form', module)
 			    	<fieldset class="fieldset">
 			    		<legend class="legend visually-hidden">Terms and Conditions</legend>
 			    		<div class="fieldset_inner">
-					    	<Label text="I agree to the Terms and Conditions">
+					    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
 					    		<Checkbox groupname="group_1" />
 					    	</Label>
 						</div>

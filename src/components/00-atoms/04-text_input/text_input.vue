@@ -1,5 +1,5 @@
 <template>
-  <input :type="type" :class="classes" />
+  <input :type="type" :class="classes" :value="value" />
 </template>
 
 <script>
@@ -14,7 +14,12 @@
       classList:{
         type: String,
         default: "",
-      }
+      },
+      value: {
+        type: String,
+        required: true,
+        default: ""
+      },
     },
     computed: {
       classes() {
