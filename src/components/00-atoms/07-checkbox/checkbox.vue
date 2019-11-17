@@ -1,23 +1,28 @@
 <template>
-  <textarea :class="classes" :id="inputID" />
+
+  <div :class="classes" >
+    <input type="checkbox" :name="groupname" />
+    <em></em>
+  </div>
+
 </template>
 
 <script>
   export default {
-    name: 'TextInput',
+    name: 'Checkbox',
     props: {
       classList:{
         type: String,
         default: "",
       },
-      inputID: {
+      groupname: {
         type: String,
         required: true
       }
     },
     computed: {
       classes() {
-        return `textarea ${this.classList}`;  
+        return `checkbox ${this.classList}`;  
       },
     },
     methods: {
@@ -28,5 +33,5 @@
 </script>
 
 <style lang="scss">
-  @import "./_textarea.scss";
+  @import "./_checkbox.scss";
 </style>

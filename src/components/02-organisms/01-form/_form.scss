@@ -1,0 +1,130 @@
+
+$form-error: $brand-9;
+
+.form {
+	max-width: $breakpoint-2;
+	margin: 0 auto;
+	padding: $spacing-full;
+	background: $background-colour-1;
+
+	&.form--linear {
+
+		.fieldset {
+			padding-top: $spacing-half;
+			margin: $spacing-double 0 $spacing-full 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.legend {
+				font-family: $font-family-semibold;
+				font-size: 1.8rem;
+				color: $text-colour-1;
+			}
+		}
+
+		.fieldset_inner {
+
+			.label {
+				margin-bottom: $spacing-half;
+				overflow: hidden;
+
+				.radio_button, .checkbox {
+					float: left;
+					margin: 9px $spacing-quarter 0 0;
+				}
+
+				&[data-valid], &[data-invalid] {
+
+					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+						border-color: $form-error;
+					}
+
+					&:after {
+						content: attr(data-invalid);
+						display: block;
+						font-family: $font-family-semibold;
+						font-size: 1.4rem;
+						line-height: 3rem;
+						color: $form-error;
+					}
+				}
+			}
+		}
+	}
+
+	&.form--infield {
+
+		.fieldset {
+			padding-top: $spacing-half;
+			margin: $spacing-double 0 $spacing-full 0;
+			border-bottom: 1px solid $line-colour-2;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.legend {
+				font-family: $font-family-semibold;
+				font-size: 1.8rem;
+				color: $text-colour-1;
+			}
+		}
+
+		.fieldset_inner {
+
+			.label {
+				padding: $spacing-half $spacing-full $spacing-half $spacing-full;
+				background: $background-colour-1;
+				border: 1px solid $line-colour-2;
+				border-bottom: none;
+				overflow: hidden;
+
+				.label_text {
+					margin-bottom: $spacing-half;
+					font-size: 1.6rem;
+				}
+
+				.text_input, .textarea, .select {
+					background: none;
+					border-width: 0 0 1px 0;
+					padding: 0;
+					margin-bottom: $spacing-half;
+				}
+
+				.radio_button, .checkbox {
+					float: left;
+					margin: 9px $spacing-quarter 0 0;
+				}
+
+				&[data-valid], &[data-invalid] {
+
+					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+						border-color: $form-error;
+					}
+
+					&:after {
+						content: attr(data-invalid);
+						display: block;
+						font-family: $font-family-semibold;
+						font-size: 1.4rem;
+						line-height: 3rem;
+						color: $form-error;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

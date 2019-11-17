@@ -1,5 +1,10 @@
 
 #site_footer {
-	min-height: 200px;
-	background: green;
+	background: $brand-1;
+	padding: $spacing-half 0;
+
+	.t3 {
+		margin: 0;
+		color: $text-colour-3;
+	}
 }

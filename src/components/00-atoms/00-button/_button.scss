@@ -1,5 +1,25 @@
 //Atoms/Button
 
+$primary-button-background: $action-colour;
+$primary-button-background-hover: $active-colour;
+$primary-button-border: $action-colour;
+$primary-button-border-hover: $active-colour;
+$primary-button-colour: $text-colour-2;
+$primary-button-colour-hover: $text-colour-2;
+$primary-button-background-disabled: $text-colour-3;
+$primary-button-border-disabled: $brand-5;
+$primary-button-colour-disabled: $brand-3;
+
+$secondary-button-background: transparent;
+$secondary-button-background-hover: transparent;
+$secondary-button-border:  $text-colour-1;
+$secondary-button-border-hover: $action-colour;
+$secondary-button-colour: $text-colour-1;
+$secondary-button-colour-hover: $text-colour-1;
+$secondary-button-background-disabled: transparent;
+$secondary-button-border-disabled: $brand-5;
+$secondary-button-colour-disabled: $brand-5;
+
 .button {
 	display: inline-block;
 	background: $primary-button-background;

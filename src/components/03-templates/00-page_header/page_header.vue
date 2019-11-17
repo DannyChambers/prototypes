@@ -1,12 +1,30 @@
 <template>
   <div :class="classes" id="page_header">
-    <slot></slot>
+    <Container>
+
+      <Logo />
+
+    </Container>
   </div>
 </template>
 
 <script>
+
+  //Atoms
+
+  //Molecules
+  import Container from   '../../01-molecules/00-container/container.vue'
+
+  //Organisms
+  import Logo from        '../../02-organisms/00-logo/logo.vue'
+
+  //Templates
+
   export default {
-    name: 'PageHeader',
+    name: 'Home',
+    components: {
+      Container, Logo
+    },
     props: {
       variant: String
     },
@@ -23,3 +41,4 @@
 <style lang="scss">
   @import "./_page_header.scss";
 </style>
+

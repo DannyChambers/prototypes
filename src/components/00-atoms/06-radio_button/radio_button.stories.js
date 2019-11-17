@@ -2,10 +2,10 @@
 import { storiesOf } from '@storybook/vue'
 //import { action } from '@storybook/addon-actions'
 
-import PageFooter from './page_footer.vue'
+import RadioButton from './radio_button.vue'
 
-storiesOf('Components/Templates/Page Footer', module)
+storiesOf('Components/Atoms/Radio button', module)
   .add('Default', () => ({
-    components: { PageFooter },
-    template: '<PageFooter/>'
+    components: { RadioButton },
+    template: '<RadioButton groupname="group_1" />'
   }));

@@ -1,26 +1,28 @@
 <template>
-  <label :class="classes">
-    <span class="label_text">{{text}}</span>
-    <slot></slot>
-  </label>
+
+  <div :class="classes" >
+    <input type="radio" :name="groupname" />
+    <em></em>
+  </div>
+
 </template>
 
 <script>
   export default {
-    name: 'Label',
+    name: 'RadioButton',
     props: {
       classList:{
         type: String,
         default: "",
       },
-      text: {
+      groupname: {
         type: String,
         required: true
       }
     },
     computed: {
       classes() {
-        return `label ${this.classList}`;  
+        return `radio_button ${this.classList}`;  
       },
     },
     methods: {
@@ -31,5 +33,5 @@
 </script>
 
 <style lang="scss">
-  @import "./_label.scss";
+  @import "./_radio_button.scss";
 </style>

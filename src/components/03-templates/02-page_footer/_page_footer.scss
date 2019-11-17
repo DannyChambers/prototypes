@@ -1,5 +1,19 @@
 
 #page_footer {
-	min-height: 200px;
-	background: blue;
+	background: $brand-8;
+	padding: $spacing-full 0;
+
+	* {
+		color: $text-colour-3;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+	#page_footer {
+		padding: $spacing-double 0;
+
+
+	}
+
 }

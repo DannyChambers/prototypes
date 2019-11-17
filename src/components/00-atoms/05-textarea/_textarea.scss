@@ -3,14 +3,19 @@
 	width: 100%;
 	padding: $spacing-quarter;
 	border: 1px solid $line-colour-1;
-	background: $background-colour-1;
 	font-family: $font-family-regular;
 	height: $dimension-quadruple;
 	-webkit-appearance: none;
+	background: $background-colour-1;
 	resize: none;
+	transition: border-color .3s ease-in-out;
+
+	&:hover {
+		border-color: $action-colour;
+	}
 
 	&:focus {
-		border-color: $link-colour;
+		border-color: $active-colour;
 	}
 }
 

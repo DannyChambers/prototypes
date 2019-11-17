@@ -1,0 +1,61 @@
+
+.banner {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	padding: $spacing-full 0;
+	display: table;
+
+	.banner-inner {
+		display: table-cell;
+		vertical-align: middle;
+
+		.container {
+
+			.banner_content {
+				background: $brand-3;
+				padding: $spacing-full;
+
+				.banner_title {
+					margin-bottom: $spacing-half;
+				}
+
+				.banner_text {
+					font-family: $font-family-semibold;
+				}
+
+				.button {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.banner {
+		min-height: 300px;
+		
+		.container {
+
+			.banner_content {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-5){
+
+	.banner {
+		min-height: 500px;
+
+		.container {
+
+			.banner_content {
+				width: 50%;
+			}
+		}
+	}
+}

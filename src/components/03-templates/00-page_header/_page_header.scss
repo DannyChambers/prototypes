@@ -1,5 +1,20 @@
 
 #page_header {
-	min-height: 200px;
-	background: pink;
+	padding: $spacing-half;
+	border-top: 4px solid $brand-1;
+	background-color: $brand-12;
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+
+	.container {
+
+		.logo {
+			color: $text-colour-2;
+		}
+
+	}
 }

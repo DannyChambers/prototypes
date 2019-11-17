@@ -6,13 +6,13 @@
 
 <script>
   export default {
-    name: 'ButtonGroup',
+    name: 'CopyBlock',
     props: {
-      alignment: String
+      variant: String
     },
     computed: {
       classes() {
-        return `button_group button_group--${this.alignment}`;  
+        return `copy_block`;  
       },
     },
     methods: {
@@ -21,5 +21,5 @@
 </script>
 
 <style lang="scss">
-  @import "./_button_group.scss";
+  @import "./copy_block.scss";
 </style>

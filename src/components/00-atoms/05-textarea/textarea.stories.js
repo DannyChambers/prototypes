@@ -7,5 +7,5 @@ import Textarea from './textarea.vue'
 storiesOf('Components/Atoms/Textarea', module)
   .add('Default', () => ({
     components: { Textarea },
-    template: '<Textarea id="abc"></textarea>'
+    template: '<Textarea />'
   }));

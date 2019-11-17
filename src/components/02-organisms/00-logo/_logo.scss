@@ -1,7 +1,39 @@
 
 .logo {
+	display: block;
+	width: $dimension-quadruple;
+	margin: 0 auto;
+	font-family: $font-family-logo;
+
+	span {
+		display: block;
+		font-size: 4rem;
+		line-height: 4.4rem;
+		text-align: center;
+		letter-spacing: -1px;
+		transform: rotate(-5deg);
+
+		&:first-child {
+			font-size: 3.4rem;
+			line-height: 3.8rem;
+			margin: 0 0 -13px -30px;
+		}
+	}
+}
 
 
+@media only screen and (min-width : $breakpoint-4){
 
-	
+	.logo {
+
+		span {
+			font-size: 5rem;
+			line-height: 5.4rem;
+
+			&:first-child {
+				font-size: 4.4rem;
+				line-height: 4.8rem;
+			}
+		}
+	}
 }

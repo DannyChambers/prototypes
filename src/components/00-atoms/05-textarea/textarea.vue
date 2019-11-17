@@ -1,26 +1,19 @@
 <template>
-  <label :class="classes">
-    <span class="label_text">{{text}}</span>
-    <slot></slot>
-  </label>
+  <textarea :class="classes" />
 </template>
 
 <script>
   export default {
-    name: 'Label',
+    name: 'TextInput',
     props: {
       classList:{
         type: String,
         default: "",
-      },
-      text: {
-        type: String,
-        required: true
       }
     },
     computed: {
       classes() {
-        return `label ${this.classList}`;  
+        return `textarea ${this.classList}`;  
       },
     },
     methods: {
@@ -31,5 +24,5 @@
 </script>
 
 <style lang="scss">
-  @import "./_label.scss";
+  @import "./_textarea.scss";
 </style>

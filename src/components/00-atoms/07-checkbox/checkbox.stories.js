@@ -2,10 +2,10 @@
 import { storiesOf } from '@storybook/vue'
 //import { action } from '@storybook/addon-actions'
 
-import PageFooter from './page_footer.vue'
+import Checkbox from './checkbox.vue'
 
-storiesOf('Components/Templates/Page Footer', module)
+storiesOf('Components/Atoms/Checkbox', module)
   .add('Default', () => ({
-    components: { PageFooter },
-    template: '<PageFooter/>'
+    components: { Checkbox },
+    template: '<Checkbox groupname="group_1" />'
   }));

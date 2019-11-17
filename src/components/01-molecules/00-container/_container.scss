@@ -2,4 +2,19 @@
 .container {
 	max-width: $maximum-page-width;
 	margin: 0 auto;
+	padding: 0 $spacing-full;
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.container {
+		padding: 0 $spacing-double;
+	}
+}
+
+@media only screen and (min-width : $breakpoint-5){
+
+	.container {
+		padding: 0;
+	}
 }

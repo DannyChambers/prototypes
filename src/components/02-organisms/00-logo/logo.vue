@@ -1,6 +1,7 @@
 <template>
   <a class="logo">
-    Tyler's Soap
+    <span>Tyler's</span>
+    <span>Soap</span>
   </a>
 </template>
 
