@@ -1,4 +1,5 @@
 
+
 .button_group {
 	width: 100%;
 
@@ -6,11 +7,19 @@
 		display: inline-block;
 		margin: 0 0 $spacing-full 0;
 	}
+
+	&.button_group--left , &.button_group--centre, &.button_group--right, &.button_group--fullwidth {
+		text-align: center;
+
+		.button {
+			margin: 0 $spacing-half $spacing-full 0;
+		}
+
+	}
 }
 
 
 @media only screen and (min-width : $breakpoint-2){
-
 
 	.button_group {
 
@@ -18,7 +27,7 @@
 			text-align: left;
 
 			.button {
-				margin: 0 $spacing-full $spacing-full 0;
+				margin: 0 $spacing-half $spacing-full 0;
 			}
 		}
 
@@ -35,7 +44,7 @@
 			text-align: right;
 
 			.button {
-				margin: 0 0 $spacing-full $spacing-full;
+				margin: 0 0 $spacing-full $spacing-half;
 			}
 		}
 
@@ -47,9 +56,10 @@
 				margin-bottom: $spacing-full;
 
 				&:first-child {
-					margin-right: $spacing-full;
+					margin-right: $spacing-half;
 				}
 			}
 		}
 	}
+
 }

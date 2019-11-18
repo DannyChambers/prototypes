@@ -8,7 +8,6 @@
     props: {
       type: {
         type: String,
-        required: true,
         default: "text"
       },
       classList:{
@@ -16,9 +15,7 @@
         default: "",
       },
       value: {
-        type: String,
-        required: true,
-        default: ""
+        type: String
       },
     },
     computed: {

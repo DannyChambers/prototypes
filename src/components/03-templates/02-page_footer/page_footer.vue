@@ -2,7 +2,7 @@
   <div :class="classes" id="page_footer">
     <Container>
 
-      <div class="layout_33-33-33">
+      <div class="layout layout_33-33-33">
 
         <div class="column">
 

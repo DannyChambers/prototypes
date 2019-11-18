@@ -1,5 +1,5 @@
 <template>
-  <a class="logo">
+  <a href="/" class="logo">
     <span>Tyler's</span>
     <span>Soap</span>
   </a>

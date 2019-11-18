@@ -4,10 +4,12 @@
 	padding: $spacing-quarter;
 	border: 1px solid $line-colour-1;
 	font-family: $font-family-regular;
-	height: $dimension-quadruple;
+	line-height: 2.4rem;
 	-webkit-appearance: none;
 	background: $background-colour-1;
+	box-sizing: content-box;
 	resize: none;
+	overflow: hidden;
 	transition: border-color .3s ease-in-out;
 
 	&:hover {

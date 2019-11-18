@@ -4,11 +4,10 @@ $form-invalid: $brand-9;
 
 .form {
 	margin: 0 auto;
-	padding: $spacing-half;
+	padding: $spacing-half 0;
 	background: $background-colour-1;
 
 	&.form--linear {
-		max-width: $breakpoint-2;
 
 		.fieldset {
 			padding-top: $spacing-half;
@@ -25,54 +24,50 @@ $form-invalid: $brand-9;
 			}
 		}
 
-		.fieldset_inner {
+		.label {
+			margin-bottom: $spacing-half;
+			overflow: hidden;
 
-			.label {
-				margin-bottom: $spacing-half;
-				overflow: hidden;
+			.radio_button, .checkbox {
+				float: left;
+				margin: 9px $spacing-quarter 0 0;
+			}
 
-				.radio_button, .checkbox {
-					float: left;
-					margin: 9px $spacing-quarter 0 0;
+			&[data-valid], &[data-invalid] {
+
+				.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+					border-color: $active-colour;
 				}
 
-				&[data-valid], &[data-invalid] {
+				&:after {
+					content: attr(data-valid);
+					display: block;
+					font-family: $font-family-semibold;
+					font-size: 1.4rem;
+					line-height: 3rem;
+					color: $form-valid;
+				}
+			}
 
-					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $active-colour;
-					}
+			&[data-invalid] {
 
-					&:after {
-						content: attr(data-valid);
-						display: block;
-						font-family: $font-family-semibold;
-						font-size: 1.4rem;
-						line-height: 3rem;
-						color: $form-valid;
-					}
+				.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+					border-color: $form-invalid;
 				}
 
-				&[data-invalid] {
-
-					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $form-invalid;
-					}
-
-					&:after {
-						content: attr(data-invalid);
-						color: $form-invalid;
-					}
+				&:after {
+					content: attr(data-invalid);
+					color: $form-invalid;
 				}
 			}
 		}
 	}
 
 	&.form--infield {
-		max-width: $breakpoint-2;
 
 		.fieldset {
 			padding-top: $spacing-half;
-			margin: $spacing-double 0 $spacing-full 0;
+			margin: $spacing-full 0;
 			border-bottom: 1px solid $line-colour-2;
 
 			&:first-child {
@@ -86,65 +81,78 @@ $form-invalid: $brand-9;
 			}
 		}
 
-		.fieldset_inner {
+		.label {
+			padding: $spacing-quarter $spacing-half $spacing-full $spacing-half;
+			background: $background-colour-1;
+			border: 1px solid $line-colour-2;
+			border-bottom: none;
+			overflow: hidden;
 
-			.label {
-				padding: $spacing-half $spacing-full;
-				background: $background-colour-1;
-				border: 1px solid $line-colour-2;
-				border-bottom: none;
-				overflow: hidden;
+			.label_text {
+				display: block;
+				font-size: 1.6rem;
+			}
 
-				.label_text {
-					margin-bottom: $spacing-half;
-					font-size: 1.6rem;
+			.text_input, .select {
+				background: none;
+				border-width: 0 0 1px 0;
+				padding: 0;
+			}
+
+			.textarea {
+				background: none;
+				border-width: 0 0 1px 0;
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			&.label--checkbox, &.label--radio {
+				line-height: 2.4rem;
+				padding: $spacing-half 0 $spacing-quarter calc(#{$spacing-half} + 32px);
+				position: relative;
+				border-top: none;
+
+				&:first-of-type {
+					border-top: 1px solid $line-colour-2;
 				}
 
-				.text_input, .textarea, .select {
-					background: none;
-					border-width: 0 0 1px 0;
-					padding: 0;
-					margin-bottom: $spacing-half;
+				&:last-of-type {
+					padding-bottom: $spacing-half;
 				}
 
-				&.label--checkbox, &.label--radio {
-					line-height: 2.4rem;
-					padding-left: calc(#{$spacing-full} + 30px);
-					position: relative;
+				.checkbox, .radio_button {
+					position: absolute;
+					top: $spacing-half;
+					left: $spacing-half;
+				}
+			}
 
-					.checkbox, .radio_button {
-						position: absolute;
-						top: $spacing-half;
-						left: $spacing-full;
-					}
+			&[data-valid], &[data-invalid] {
+				padding-bottom: $spacing-half;
+
+				.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+					border-color: $active-colour;
 				}
 
-				&[data-valid], &[data-invalid] {
+				&:after {
+					content: attr(data-valid);
+					display: block;
+					font-family: $font-family-semibold;
+					font-size: 1.4rem;
+					line-height: 3rem;
+					color: $form-valid;
+				}
+			}
 
-					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $active-colour;
-					}
+			&[data-invalid] {
 
-					&:after {
-						content: attr(data-valid);
-						display: block;
-						font-family: $font-family-semibold;
-						font-size: 1.4rem;
-						line-height: 3rem;
-						color: $form-valid;
-					}
+				.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
+					border-color: $form-invalid;
 				}
 
-				&[data-invalid] {
-
-					.text_input, .textarea, .select, .radio em:before, .checkbox em:before {
-						border-color: $form-invalid;
-					}
-
-					&:after {
-						content: attr(data-invalid);
-						color: $form-invalid;
-					}
+				&:after {
+					content: attr(data-invalid);
+					color: $form-invalid;
 				}
 			}
 		}
@@ -154,25 +162,50 @@ $form-invalid: $brand-9;
 @media only screen and (min-width : $breakpoint-2){
 
 	.form {
-		padding: $spacing-full;
+		padding: $spacing-full 0;
 
 		&.form--linear {
 
-			.fieldset_inner {
-
-				.label {
-					margin-bottom: $spacing-half;
-					overflow: hidden;
-				}
+			.label {
+				margin-bottom: $spacing-half;
+				overflow: hidden;
 			}
 		}
 
 		&.form--infield {
 
-			.fieldset_inner {
+			.fieldset {
+				margin: $spacing-double 0;
 
 				.label {
-					padding: $spacing-half $spacing-full;
+					padding: $spacing-half $spacing-full $spacing-full $spacing-full;
+
+					&.label--checkbox, &.label--radio {
+						line-height: 2.4rem;
+						padding: $spacing-half 0 $spacing-quarter calc(#{$spacing-full} + 35px);
+						position: relative;
+
+						&:last-of-type {
+							padding-bottom: $spacing-half;
+						}
+
+						.checkbox, .radio_button {
+							position: absolute;
+							top: $spacing-half;
+							left: $spacing-full;
+						}
+					}
+				}
+
+				.grouped_fields {
+					display: flex;
+					border: 1px solid $line-colour-2;
+					border-bottom: none;
+
+					.label {
+						flex: 1 1 0;
+						border: none;
+					}
 				}
 			}
 		}

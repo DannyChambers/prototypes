@@ -1,5 +1,5 @@
 <template>
-  <textarea :class="classes" />
+  <textarea :class="classes" @keyup="autosize" />
 </template>
 
 <script>
@@ -17,7 +17,15 @@
       },
     },
     methods: {
-      onClick() {
+      autosize: function(){
+        console.log("called autosize");
+
+        setTimeout(function(){
+
+          this.$el.style.height = "auto";
+          this.$el.style.height = `${this.$el.scrollHeight}px`;
+          
+        }.bind(this), 0);
       }
     }
   }

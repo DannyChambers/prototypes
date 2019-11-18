@@ -2,6 +2,7 @@
 import { storiesOf } from '@storybook/vue'
 //import { action } from '@storybook/addon-actions'
 
+import Container from '../../01-molecules/00-container/container.vue'
 import Form from './form.vue'
 import Label from '../../00-atoms/03-label/label.vue'
 import TextInput from '../../00-atoms/04-text_input/text_input.vue'
@@ -13,68 +14,77 @@ import Button from '../../00-atoms/00-button/button.vue'
 
 storiesOf('Components/Organisms/Form', module)
   .add('Linear', () => ({
-    components: { Form, Label, TextInput, Textarea, RadioButton, Checkbox, ButtonGroup, Button },
+    components: { Container, Form, Label, TextInput, Textarea, RadioButton, Checkbox, ButtonGroup, Button },
     template: `
-			    <Form variant="linear">
-			    	<fieldset class="fieldset">
-			    		<legend class="legend">Personal details</legend>
-			    		<div class="fieldset_inner">
-					    	<Label text="First name" data-valid="Complete.">
-					    		<TextInput value="Marla" />
-					    	</Label>
-					    	<Label text="Last name" data-invalid="This field is required">
-					    		<TextInput />
-					    	</Label>
-					    	<Label text="Email address">
-					    		<TextInput type="email" />
-					    	</Label>
-					    	<Label text="Notes">
-					    		<Textarea />
-					    	</Label>
-						</div>
+    	<Container>
+	        <div class="layout layout_medium-centred">
+	          <div class="column">
+
+				<Form variant="linear">
+					<fieldset class="fieldset">
+						<legend class="legend">Personal details</legend>
+				    	<Label text="First name" data-valid="Complete.">
+				    		<TextInput value="Marla" />
+				    	</Label>
+				    	<Label text="Last name" data-invalid="This field is required">
+				    		<TextInput />
+				    	</Label>
+				    	<Label text="Email address">
+				    		<TextInput type="email" />
+				    	</Label>
+				    	<Label text="Confirm email address">
+				    		<TextInput type="email" />
+				    	</Label>
+				    	<Label text="Notes">
+				    		<Textarea />
+				    	</Label>
 					</fieldset>
 
-			    	<fieldset class="fieldset">
-			    		<legend class="legend">Marketing preferences</legend>
-			    		<div class="fieldset_inner">
-							<fieldset class="fieldgroup">
-						    	<Label text="Recieve offers from us" class="label--radio">
-						    		<RadioButton groupname="group_1" />
-						    	</Label>
-						    	<Label text="Recieve offers from third parties" class="label--radio">
-						    		<RadioButton groupname="group_1" />
-						    	</Label>
-						    	<Label text="Recieve no marketing" class="label--radio">
-						    		<RadioButton groupname="group_1" />
-						    	</Label>
-							</fieldset>
-						</div>
-					</fieldset>
-
-			    	<fieldset class="fieldset">
-			    		<legend class="legend visually-hidden">Terms and Conditions</legend>
-			    		<div class="fieldset_inner">
-					    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
-					    		<Checkbox groupname="group_1" />
+					<fieldset class="fieldset">
+						<legend class="legend">Marketing preferences</legend>
+						<fieldset class="fieldgroup">
+					    	<Label text="Recieve offers from us" class="label--radio">
+					    		<RadioButton groupname="group_1" />
 					    	</Label>
-						</div>
+					    	<Label text="Recieve offers from third parties" class="label--radio">
+					    		<RadioButton groupname="group_1" />
+					    	</Label>
+					    	<Label text="Recieve no marketing" class="label--radio">
+					    		<RadioButton groupname="group_1" />
+					    	</Label>
+						</fieldset>
 					</fieldset>
 
-				   	<ButtonGroup alignment="centre">
+					<fieldset class="fieldset">
+						<legend class="legend visually-hidden">Terms and Conditions</legend>
+				    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
+				    		<Checkbox groupname="group_1" />
+				    	</Label>
+					</fieldset>
+
+				   	<ButtonGroup alignment="left">
 						<Button type="submit" variant="primary" text="Submit" />
 						<Button type="link" variant="secondary" text="Cancel" />
 				   	</ButtonGroup>
 
-			    </Form>
+				</Form>
+
+			   </div>
+			</div>
+		</Container>
     `
   }))
   .add('Infield', () => ({
     components: { Form, Label, TextInput, Textarea, RadioButton, Checkbox, ButtonGroup, Button },
     template: `
-			    <Form variant="infield">
-			    	<fieldset class="fieldset">
-			    		<legend class="legend">Personal details</legend>
-			    		<div class="fieldset_inner">
+
+    	<Container>
+	        <div class="layout layout_medium-centred">
+	          <div class="column">
+
+				    <Form variant="infield">
+				    	<fieldset class="fieldset">
+				    		<legend class="legend">Personal details</legend>
 					    	<Label text="First name" data-valid="Complete.">
 					    		<TextInput value="Marla" />
 					    	</Label>
@@ -84,15 +94,16 @@ storiesOf('Components/Organisms/Form', module)
 					    	<Label text="Email address">
 					    		<TextInput type="email" />
 					    	</Label>
+					    	<Label text="Email address">
+					    		<TextInput type="email" />
+					    	</Label>
 					    	<Label text="Notes">
 					    		<Textarea />
 					    	</Label>
-						</div>
-					</fieldset>
+						</fieldset>
 
-			    	<fieldset class="fieldset">
-			    		<legend class="legend">Marketing preferences</legend>
-			    		<div class="fieldset_inner">
+				    	<fieldset class="fieldset">
+				    		<legend class="legend">Marketing preferences</legend>
 							<fieldset class="fieldgroup">
 						    	<Label text="Recieve offers from us" class="label--radio">
 						    		<RadioButton groupname="group_1" />
@@ -104,23 +115,92 @@ storiesOf('Components/Organisms/Form', module)
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
 							</fieldset>
-						</div>
-					</fieldset>
+						</fieldset>
 
-			    	<fieldset class="fieldset">
-			    		<legend class="legend visually-hidden">Terms and Conditions</legend>
-			    		<div class="fieldset_inner">
+				    	<fieldset class="fieldset">
+				    		<legend class="legend visually-hidden">Terms and Conditions</legend>
 					    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
 					    		<Checkbox groupname="group_1" />
 					    	</Label>
-						</div>
-					</fieldset>
+						</fieldset>
 
-				   	<ButtonGroup alignment="centre">
-						<Button type="submit" variant="primary" text="Submit" />
-						<Button type="link" variant="secondary" text="Cancel" />
-				   	</ButtonGroup>
+					   	<ButtonGroup alignment="left">
+							<Button type="submit" variant="primary" text="Submit" />
+							<Button type="link" variant="secondary" text="Cancel" />
+					   	</ButtonGroup>
 
-			    </Form>
+				    </Form>
+
+				</div>
+			</div>
+
+		</Container>
+    `
+  }))
+  .add('Infield grouped', () => ({
+    components: { Form, Label, TextInput, Textarea, RadioButton, Checkbox, ButtonGroup, Button },
+    template: `
+
+    	<Container>
+	        <div class="layout layout_medium-centred">
+	          <div class="column">
+
+				    <Form variant="infield">
+				    	<fieldset class="fieldset">
+				    		<legend class="legend">Personal details</legend>
+				    		<div class="grouped_fields">
+						    	<Label text="First name" data-valid="Complete.">
+						    		<TextInput value="Marla" />
+						    	</Label>
+						    	<Label text="Last name" data-invalid="This field is required">
+						    		<TextInput />
+						    	</Label>
+						    </div>
+				    		<div class="grouped_fields">
+						    	<Label text="Email address">
+						    		<TextInput type="email" />
+						    	</Label>
+						    	<Label text="Confirm email address">
+						    		<TextInput type="email" />
+						    	</Label>
+						    </div>
+					    	<Label text="Notes">
+					    		<Textarea />
+					    	</Label>
+						</fieldset>
+
+				    	<fieldset class="fieldset">
+				    		<legend class="legend">Marketing preferences</legend>
+							<fieldset class="fieldgroup">
+						    	<Label text="Recieve offers from us" class="label--radio">
+						    		<RadioButton groupname="group_1" />
+						    	</Label>
+						    	<Label text="Recieve offers from third parties" class="label--radio">
+						    		<RadioButton groupname="group_1" />
+						    	</Label>
+						    	<Label text="Recieve no marketing" class="label--radio">
+						    		<RadioButton groupname="group_1" />
+						    	</Label>
+							</fieldset>
+						</fieldset>
+
+				    	<fieldset class="fieldset">
+				    		<legend class="legend visually-hidden">Terms and Conditions</legend>
+					    	<Label text="I agree to the Terms and Conditions" class="label--checkbox">
+					    		<Checkbox groupname="group_1" />
+					    	</Label>
+						</fieldset>
+
+					   	<ButtonGroup alignment="left">
+							<Button type="submit" variant="primary" text="Submit" />
+							<Button type="link" variant="secondary" text="Cancel" />
+					   	</ButtonGroup>
+
+				    </Form>
+
+				</div>
+			</div>
+
+		</Container>
     `
   }));

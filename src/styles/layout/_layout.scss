@@ -9,11 +9,11 @@ $phi: 1.6180339887498948482;
     #BREAKPOINTS
 \*------------------------------------*/
 
-$breakpoint-1: 320px;// ~ iPhone 5
-$breakpoint-2: 414px;// ~ iPhone 7 +
-$breakpoint-3: 768px;// ~ iPad
-$breakpoint-4: 1024px;// ~ Desktop small
-$breakpoint-5: 1200px;// ~ Desktop large
+$breakpoint-1: 320px;// ~ x-small
+$breakpoint-2: 414px;// ~ small
+$breakpoint-3: 768px;// ~ medium
+$breakpoint-4: 1024px;// ~ large
+$breakpoint-5: 1200px;// ~ x-large
 
 $maximum-page-width: $breakpoint-5;
 
@@ -57,30 +57,46 @@ html, body {
     #LAYOUT
 \*------------------------------------*/
 
-//50 50 --
+.layout {
+	overflow: hidden;
 
-.layout_50-50 {
+	//50 centred --
 
-	.column {
-		margin-bottom: $spacing-full;
+	&.layout_50-centred {
+
+		.column {
+			margin-bottom: $spacing-full;
+		}
 	}
-}
 
-//60 40 --
+	//50 50 --
 
-.layout_60-40 {
-
-	.column {
-		margin-bottom: $spacing-full;
+	&.layout_50-50 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
 	}
-}
 
-//33 33 33 --
+	//60 40 --
 
-.layout_33-33-33 {
+	&.layout_60-40 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
+	}
 
-	.column {
-		margin-bottom: $spacing-full;
+	//33 33 33 --
+
+	&.layout_33-33-33 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
 	}
 }
 
@@ -94,49 +110,62 @@ html, body {
 
 @media only screen and (min-width : $breakpoint-3){
 
-	//50 50 --
-
-	.layout_50-50 {
-		margin: 0 -#{$spacing-half};
+	.layout {
 		overflow: hidden;
 
-		.column {
-			width: calc(50% - #{$spacing-full});
-			float: left;
-			margin: 0 $spacing-half $spacing-full $spacing-half;
+		//50 centred --
+
+		&.layout_medium-centred {
+
+			.column {
+				max-width: $breakpoint-3;
+				margin: 0 auto $spacing-full auto;
+			}
 		}
-	}
 
-	//60 40 --
+		//50 50 --
 
-	.layout_60-40 {
-		margin: 0 -#{$spacing-half};
-		overflow: hidden;
+		&.layout_50-50 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
 
-		.column {
-			width: calc(40% - #{$spacing-full});
-			float: left;
-			margin: 0 $spacing-half $spacing-full $spacing-half;
+			.column {
+				width: calc(50% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
+			}
+		}
 
-			&:first-child {
-				width: calc(60% - #{$spacing-full});
+		//60 40 --
+
+		&.layout_60-40 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
+
+			.column {
+				width: calc(40% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
+
+				&:first-child {
+					width: calc(60% - #{$spacing-full});
+				}
+			}
+		}
+
+		//33 33 33 --
+
+		&.layout_33-33-33 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
+
+			.column {
+				width: calc(33.3% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
 			}
 		}
 	}
-
-	//33 33 33 --
-
-	.layout_33-33-33 {
-		margin: 0 -#{$spacing-half};
-		overflow: hidden;
-
-		.column {
-			width: calc(33.3% - #{$spacing-full});
-			float: left;
-			margin: 0 $spacing-half $spacing-full $spacing-half;
-		}
-	}
-
 }
 
 @media only screen and (min-width : $breakpoint-5){
