@@ -1,0 +1,37 @@
+
+
+@media only screen and (min-width : $breakpoint-4){
+
+	.variant_a {
+
+		.form--linear {
+
+			.fieldset {
+				padding: $spacing-full 0;
+
+				.label {
+
+					&:after {
+						padding-left: 30%;
+					}
+
+					.label_text {
+						display: inline-block;
+						min-width: 30%;
+						text-align: right;
+						padding-right: $spacing-half;
+					}
+					
+					.text_input, .textarea {
+						display: inline;
+					}
+
+					&.label--radio, &.label--checkbox {
+						padding-left: 30%;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}

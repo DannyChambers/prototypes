@@ -48,7 +48,7 @@
                   <Label text="Recieve offers from us" class="label--radio">
                     <RadioButton groupname="group_1" />
                   </Label>
-                  <Label text="Recieve offers from third parties" class="label--radio">
+                  <Label text="Recieve offers from us and third parties" class="label--radio">
                     <RadioButton groupname="group_1" />
                   </Label>
                   <Label text="Recieve no marketing" class="label--radio">
@@ -58,7 +58,7 @@
             </fieldset>
 
               <fieldset class="fieldset">
-                <legend class="legend visually-hidden">Terms and Conditions</legend>
+                <legend class="legend">Terms and Conditions</legend>
                 <Label text="I agree to the Terms and Conditions" class="label--checkbox">
                   <Checkbox groupname="group_1" />
                 </Label>

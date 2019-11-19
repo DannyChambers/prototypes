@@ -38,7 +38,7 @@
 
   //Atoms
   import H2 from          '../../00-atoms/02-typography/h2.vue'
-  import T2 from          '../../00-atoms/02-typography/t1.vue'
+  import T2 from          '../../00-atoms/02-typography/t2.vue'
 
   //Molecules
   import Container from   '../../01-molecules/00-container/container.vue'

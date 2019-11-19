@@ -1,5 +1,5 @@
 <template>
-  <textarea :class="classes" @keyup="autosize" />
+  <textarea rows="1" :class="classes" @keyup="autosize" />
 </template>
 
 <script>

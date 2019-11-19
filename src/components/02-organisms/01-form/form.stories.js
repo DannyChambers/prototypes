@@ -46,7 +46,7 @@ storiesOf('Components/Organisms/Form', module)
 					    	<Label text="Recieve offers from us" class="label--radio">
 					    		<RadioButton groupname="group_1" />
 					    	</Label>
-					    	<Label text="Recieve offers from third parties" class="label--radio">
+					    	<Label text="Recieve offers from us and third parties" class="label--radio">
 					    		<RadioButton groupname="group_1" />
 					    	</Label>
 					    	<Label text="Recieve no marketing" class="label--radio">
@@ -108,7 +108,7 @@ storiesOf('Components/Organisms/Form', module)
 						    	<Label text="Recieve offers from us" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve offers from third parties" class="label--radio">
+						    	<Label text="Recieve offers from us and third parties" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
 						    	<Label text="Recieve no marketing" class="label--radio">
@@ -175,7 +175,7 @@ storiesOf('Components/Organisms/Form', module)
 						    	<Label text="Recieve offers from us" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
-						    	<Label text="Recieve offers from third parties" class="label--radio">
+						    	<Label text="Recieve offers from us and third parties" class="label--radio">
 						    		<RadioButton groupname="group_1" />
 						    	</Label>
 						    	<Label text="Recieve no marketing" class="label--radio">
