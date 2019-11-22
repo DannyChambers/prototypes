@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="variant_d">
 
     <PageHeader />
 
@@ -12,31 +12,27 @@
 
             <CopyBlock>
 
-              <H2 text="Sign up for a Soap Club free trial" />
+              <H2 text="Sign up for Soap Club" />
 
-              <T1 text="Lorem ipsum dolor sit etiet emet moleste dolor site." />
+              <T1 text="Enter your details below and subscribe to product and promotional updates from our Soap Club!" />
 
             </CopyBlock>
 
             <Form variant="infield">
               <fieldset class="fieldset">
                 <legend class="legend">Personal details</legend>
-                <div class="grouped_fields">
-                  <Label text="First name" data-valid="Complete.">
-                    <TextInput value="Marla" />
-                  </Label>
-                  <Label text="Last name" data-invalid="This field is required">
-                    <TextInput />
-                  </Label>
-                </div>
-                <div class="grouped_fields">
-                  <Label text="Email address">
-                    <TextInput type="email" />
-                  </Label>
-                  <Label text="Confirm email address">
-                    <TextInput type="email" />
-                  </Label>
-                </div>
+                <Label text="First name" data-valid="Complete.">
+                  <TextInput value="Marla" />
+                </Label>
+                <Label text="Last name" data-invalid="This field is required">
+                  <TextInput />
+                </Label>
+                <Label text="Email address">
+                  <TextInput type="email" />
+                </Label>
+                <Label text="Confirm email address">
+                  <TextInput type="email" />
+                </Label>
                 <Label text="Notes">
                   <Textarea />
                 </Label>
@@ -45,15 +41,15 @@
               <fieldset class="fieldset">
                 <legend class="legend">Marketing preferences</legend>
                 <fieldset class="fieldgroup">
-                    <Label text="Recieve offers from us" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve offers from us and third parties" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve no marketing" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
+                  <Label text="Recieve offers from us" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
+                  <Label text="Recieve offers from third us and parties" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
+                  <Label text="Recieve no marketing" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
                 </fieldset>
               </fieldset>
 

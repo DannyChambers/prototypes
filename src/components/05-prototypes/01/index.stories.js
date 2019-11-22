@@ -6,6 +6,7 @@ import Variant_A from './variant_a/index.vue'
 import Variant_B from './variant_b/index.vue'
 import Variant_C from './variant_c/index.vue'
 import Variant_D from './variant_d/index.vue'
+import Variant_E from './variant_e/index.vue'
 
 storiesOf('Components/Prototypes/01', module)
   .add('Variant A', () => ({
@@ -23,4 +24,9 @@ storiesOf('Components/Prototypes/01', module)
    .add('Variant D', () => ({
     components: { Variant_D },
     template: '<Variant_D />'
+  }))
+   .add('Variant E', () => ({
+    components: { Variant_E },
+    template: '<Variant_E />'
   }));
+

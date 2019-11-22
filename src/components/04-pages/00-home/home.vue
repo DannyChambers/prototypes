@@ -4,7 +4,7 @@
 
     <PageHeader />
 
-    <Banner url="https://via.placeholder.com/1600x1000/666/999">
+    <Banner url="@images/site/soap_banner.jpg">
 
       <H2 class="banner_title" text="Flash Sale!" />
 
@@ -23,7 +23,7 @@
 
           <H2 text="Heading two" />
 
-          <T1 text="Lorem ipsum dolor sit etiet emet moleste dolor site." />
+          <T1 text="Enter your details below and subscribe to product and promotional updates from our Soap Club!" />
 
         </CopyBlock>
 

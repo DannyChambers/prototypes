@@ -12,9 +12,9 @@
 
             <CopyBlock>
 
-              <H2 text="Sign up for a Soap Club free trial" />
+              <H2 text="Sign up for Soap Club" />
 
-              <T1 text="Lorem ipsum dolor sit etiet emet moleste dolor site." />
+              <T1 text="Enter your details below and subscribe to product and promotional updates from our Soap Club!" />
 
             </CopyBlock>
 

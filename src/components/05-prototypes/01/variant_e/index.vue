@@ -1,6 +1,6 @@
 
 <template>
-  <div class="variant_c">
+  <div>
 
     <PageHeader />
 
@@ -18,21 +18,25 @@
 
             </CopyBlock>
 
-            <Form variant="linear">
+            <Form variant="infield">
               <fieldset class="fieldset">
                 <legend class="legend">Personal details</legend>
-                <Label text="First name" data-valid="Complete.">
-                  <TextInput value="Marla" />
-                </Label>
-                <Label text="Last name" data-invalid="This field is required">
-                  <TextInput />
-                </Label>
-                <Label text="Email address">
-                  <TextInput type="email" />
-                </Label>
-                <Label text="Confirm email address">
-                  <TextInput type="email" />
-                </Label>
+                <div class="grouped_fields">
+                  <Label text="First name" data-valid="Complete.">
+                    <TextInput value="Marla" />
+                  </Label>
+                  <Label text="Last name" data-invalid="This field is required">
+                    <TextInput />
+                  </Label>
+                </div>
+                <div class="grouped_fields">
+                  <Label text="Email address">
+                    <TextInput type="email" />
+                  </Label>
+                  <Label text="Confirm email address">
+                    <TextInput type="email" />
+                  </Label>
+                </div>
                 <Label text="Notes">
                   <Textarea />
                 </Label>
