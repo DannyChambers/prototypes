@@ -2,6 +2,7 @@
 <template>
   <p :class="classes">
     {{text}}
+    <slot></slot>
   </p>
 </template>
 

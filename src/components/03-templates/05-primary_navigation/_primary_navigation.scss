@@ -1,0 +1,52 @@
+
+.primary-navigation {
+	width: 100%;
+	padding: $spacing-full 0;
+	background: $brand-2;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+
+	.primary-navigation_list {
+
+		.primary-navigation_list-item {
+			line-height: $dimension-full;
+
+			.primary-navigation_link {
+				font-family: $font-family-semibold;
+				text-decoration: none;
+				color: $text-colour-2;
+
+				&:hover {
+					color: lighten($text-colour-2, 10%);;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+	.primary-navigation {
+		height: auto;
+		padding: 0;
+		position: relative;
+		top: auto;
+		left: auto;
+
+		.primary-navigation_list {
+			text-align: center;
+
+			.primary-navigation_list-item {
+				display: inline-block;
+				margin: 0 $spacing-half;
+
+				.primary-navigation_link {
+
+				}
+			}
+		}
+	}
+}

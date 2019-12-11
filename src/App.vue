@@ -5,12 +5,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'app',
-    components: {
-      
-    }
-  }
+	import store from './store';
+	export default {
+		name: 'app',
+		store,
+		components: {
+		}
+	}
 </script>
 
 <style>
