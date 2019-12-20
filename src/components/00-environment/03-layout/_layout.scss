@@ -1,0 +1,128 @@
+
+html, body {
+	background: $brand-4;
+	height: 100%;
+}
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+.layout {
+	overflow: hidden;
+
+	//50 centred --
+
+	&.layout_50-centred {
+
+		.column {
+			margin-bottom: $spacing-full;
+		}
+	}
+
+	//50 50 --
+
+	&.layout_50-50 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
+	}
+
+	//60 40 --
+
+	&.layout_60-40 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
+	}
+
+	//33 33 33 --
+
+	&.layout_33-33-33 {
+		overflow: visible;
+		
+		.column {
+			margin-bottom: $spacing-full;
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-2){
+
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+}
+
+@media only screen and (min-width : $breakpoint-3){
+
+	.layout {
+		overflow: hidden;
+
+		//50 centred --
+
+		&.layout_medium-centred {
+
+			.column {
+				max-width: $breakpoint-3;
+				margin: 0 auto $spacing-full auto;
+			}
+		}
+
+		//50 50 --
+
+		&.layout_50-50 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
+
+			.column {
+				width: calc(50% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
+			}
+		}
+
+		//60 40 --
+
+		&.layout_60-40 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
+
+			.column {
+				width: calc(40% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
+
+				&:first-child {
+					width: calc(60% - #{$spacing-full});
+				}
+			}
+		}
+
+		//33 33 33 --
+
+		&.layout_33-33-33 {
+			margin: 0 -#{$spacing-half};
+			overflow: hidden;
+
+			.column {
+				width: calc(33.3% - #{$spacing-full});
+				float: left;
+				margin: 0 $spacing-half $spacing-full $spacing-half;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width : $breakpoint-5){
+
+}
+
+
+
+

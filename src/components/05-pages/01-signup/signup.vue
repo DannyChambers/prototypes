@@ -42,33 +42,33 @@
                 <Label text="Notes">
                   <Textarea />
                 </Label>
-              </fieldset>
+            </fieldset>
 
               <fieldset class="fieldset">
                 <legend class="legend">Marketing preferences</legend>
-                <fieldset class="fieldgroup">
-                    <Label text="Recieve offers from us" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve offers from us and third parties" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve no marketing" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                </fieldset>
+              <fieldset class="fieldgroup">
+                  <Label text="Recieve offers from us" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
+                  <Label text="Recieve offers from us and third parties" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
+                  <Label text="Recieve no marketing" class="label--radio">
+                    <RadioButton groupname="group_1" />
+                  </Label>
               </fieldset>
+            </fieldset>
 
               <fieldset class="fieldset">
                 <legend class="legend">Terms and Conditions</legend>
                 <Label text="I agree to the Terms and Conditions" class="label--checkbox">
                   <Checkbox groupname="group_1" />
                 </Label>
-              </fieldset>
+            </fieldset>
 
               <ButtonGroup alignment="left">
-                <Button type="submit" variant="primary" text="Submit" />
-                <Button type="link" variant="secondary" text="Cancel" />
+              <Button type="submit" variant="primary" text="Submit" />
+              <Button type="link" variant="secondary" text="Cancel" />
               </ButtonGroup>
 
             </Form>
@@ -89,13 +89,6 @@
 
 <script>
 
-  //Environment
-  import Colours from               '../../../components/00-environment/00-colours/colours.vue'
-  import Fonts from                 '../../../components/00-environment/01-fonts/fonts.vue'
-  import Reset from                 '../../../components/00-environment/02-reset/reset.vue'
-  import Layout from                '../../../components/00-environment/03-layout/layout.vue'
-  import Typography from            '../../../components/00-environment/04-typography/typography.vue'
-  import Utilities from             '../../../components/00-environment/05-utilities/utilities.vue'
   //Atoms
   import Button from                '../../../components/01-atoms/00-button/button.vue'
   import H1 from                    '../../../components/01-atoms/02-typography/h1.vue'
@@ -127,9 +120,9 @@
   import PrimaryNavigation from     '../../../components/04-templates/05-primary_navigation/primary_navigation.vue'
 
   export default {
-    name: 'Home',
+    name: 'Signup',
     components: {
-      Button, Colours, Reset, Fonts, Typography, Layout, Utilities, H1, H2, H3, H4, H5, T1, T2, T3, Label, TextInput, Textarea, RadioButton, Checkbox, Container, ButtonGroup, CopyBlock, Logo, Form, PageHeader, PageBody, PageFooter, SiteFooter, Banner, PrimaryNavigation
+      Button, H1, H2, H3, H4, H5, T1, T2, T3, Label, TextInput, Textarea, RadioButton, Checkbox, Container, ButtonGroup, CopyBlock, Logo, Form, PageHeader, PageBody, PageFooter, SiteFooter, Banner, PrimaryNavigation
     },
     props: {
       variant: String
@@ -145,5 +138,5 @@
 </script>
 
 <style lang="scss">
-  @import "./_styles.scss";
+  @import "./_signup.scss";
 </style>

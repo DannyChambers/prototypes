@@ -10,12 +10,20 @@ module.exports = async ({ config, mode }) => {
   config.module.rules.push({
     test: /\.scss$/,
     sideEffects: true,
-    use: ['style-loader', 'css-loader', 'sass-loader'],
+    use: [
+      {
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      },
+      {
+        loader: 'sass-loader'
+      }
+    ],
     include: path.resolve(__dirname, '../'),
   });
 
   // Return the altered config
   return config;
 };
-
-

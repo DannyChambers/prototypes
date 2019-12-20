@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+$phi: 1.6180339887498948482;
+
+
+/*-- #BREAKPOINTS ---------------------*/
+
+$breakpoint-1: 320px;// ~ x-small
+$breakpoint-2: 414px;// ~ small
+$breakpoint-3: 768px;// ~ medium
+$breakpoint-4: 1024px;// ~ large
+$breakpoint-5: 1200px;// ~ x-large
+
+$maximum-page-width: $breakpoint-5;
+
+
+/*-- #SPACING ---------------------*/
+
+$spacing-full: 30px;
+$spacing-half: 15px;
+$spacing-quarter: 7px;
+$spacing-eighth: 4px;
+$spacing-sixteenth: 2px;
+$spacing-double: 60px;
+$spacing-triple: 90px;
+$spacing-quadruple: 120px;
+
+
+/*-- #DIMENSION ---------------------*/
+
+$dimension-full: 40px;
+$dimension-half: 20px;
+$dimension-quarter: 10px;
+$dimension-eighth: 5px;
+$dimension-sixteenth: 3px;
+$dimension-double: 80px;
+$dimension-triple: 120px;
+$dimension-quadruple: 180px;
+
