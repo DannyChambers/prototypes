@@ -9,7 +9,7 @@ import Fonts from './fonts.vue'
 storiesOf('Components/Environment/Fonts', module)
   .add('Carrington', () => ({
     components: { Fonts },
-    template: '<h1 class="h1 carrington">Carrington</h1>'
+    template: '<h1 class="h1 carrington" style="text-transform:none;">Carrington</h1>'
   }))
   .add('Raleway', () => ({
     components: { Fonts },

@@ -1,6 +1,6 @@
 
 module.exports = {
-	publicPath: '/',
+	publicPath: '/01-environmental-components/',
 	css: {
 		loaderOptions: {
 		  scss: {
