@@ -1,9 +1,10 @@
 <template>
 
-  <div :class="classes" >
+  <label :class="classes">
+    <span class="label_text">{{text}}</span>
     <input type="radio" :name="groupname" />
     <em></em>
-  </div>
+  </label>
 
 </template>
 
@@ -18,11 +19,15 @@
       groupname: {
         type: String,
         required: true
+      },
+      text: {
+        type: String,
+        required: true
       }
     },
     computed: {
       classes() {
-        return `radio_button ${this.classList}`;  
+        return `label radio_button ${this.classList}`;  
       },
     },
     methods: {

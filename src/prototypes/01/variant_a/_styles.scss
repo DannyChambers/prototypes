@@ -9,6 +9,10 @@
 			.fieldset {
 				padding: $spacing-full 0;
 
+				.fieldgroup {
+					padding-left: 30%;
+				}
+
 				.label {
 
 					&:after {
@@ -26,8 +30,7 @@
 						display: inline;
 					}
 
-					&.label--radio, &.label--checkbox {
-						padding-left: 30%;
+					&.radio_button, &.checkbox {
 						text-align: left;
 					}
 				}

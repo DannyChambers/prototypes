@@ -1,6 +1,8 @@
 
 .radio_button {
 	position: relative;
+	padding-left: calc(#{$dimension-half} + #{$dimension-quarter});
+	line-height: 30px;
 
 	input {
 		width: calc(#{$dimension-half} + 2px);
@@ -36,6 +38,9 @@
 		&:before {
 			content: " ";
 			display: block;
+			position: absolute;
+			top: $spacing-eighth;
+			left: 0;
 			width: $dimension-half;
 			height: $dimension-half;
 			line-height: calc(#{$dimension-half} + 1px);

@@ -3,15 +3,18 @@
 	width: 100%;
 	padding: $spacing-full 0;
 	background: $brand-2;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
+	//height: 100vh;
+	//position: fixed;
+	//top: 0;
+	//left: 0;
 	z-index: 99;
 
 	.primary-navigation_list {
+		text-align: center;
 
 		.primary-navigation_list-item {
+			width: 50%;
+			display: inline-block;
 			line-height: $dimension-full;
 
 			.primary-navigation_link {
@@ -37,10 +40,9 @@
 		left: auto;
 
 		.primary-navigation_list {
-			text-align: center;
 
 			.primary-navigation_list-item {
-				display: inline-block;
+				width: auto;
 				margin: 0 $spacing-half;
 
 				.primary-navigation_link {

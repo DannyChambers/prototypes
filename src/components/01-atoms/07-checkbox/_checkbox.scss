@@ -1,6 +1,8 @@
 
 .checkbox {
 	position: relative;
+	padding-left: calc(#{$dimension-half} + #{$dimension-quarter});
+	line-height: 30px;
 
 	input {
 		width: calc(#{$dimension-half} + 2px);
@@ -23,10 +25,10 @@
 		}
 
 		&:checked ~ em:before {
-			content: "\e901"; 
 			font-family: $font-family-icon;
+			content: "\e901";
 			border-color: $line-colour-1;
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 			color: $active-colour;
 		}
 	}
@@ -37,12 +39,16 @@
 		&:before {
 			content: " ";
 			display: block;
-			width:  $dimension-half;
-			height:  $dimension-half;
-			line-height: $dimension-half;
+			position: absolute;
+			top: $spacing-eighth;
+			left: 0;
+			width: $dimension-half;
+			height: $dimension-half;
+			line-height: calc(#{$dimension-half} + 1px);
+			text-indent: 1px;
 			text-align: center;	
-			background: $background-colour-1;
 			border: 1px solid $line-colour-1;
+			background: $background-colour-1;
 			transition: border-color .3s ease-in-out;
 		}
 	}

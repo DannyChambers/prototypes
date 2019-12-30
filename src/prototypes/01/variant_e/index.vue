@@ -47,23 +47,15 @@
               <fieldset class="fieldset">
                 <legend class="legend">Marketing preferences</legend>
                 <fieldset class="fieldgroup">
-                    <Label text="Recieve offers from us" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve offers from us and third parties" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
-                    <Label text="Recieve no marketing" class="label--radio">
-                      <RadioButton groupname="group_1" />
-                    </Label>
+                      <RadioButton groupname="group_1"  text="Recieve offers from us" />
+                      <RadioButton groupname="group_1" text="Recieve offers from us and third parties" />
+                      <RadioButton groupname="group_1" text="Recieve no marketing" />
                 </fieldset>
               </fieldset>
 
               <fieldset class="fieldset">
                 <legend class="legend">Terms and Conditions</legend>
-                <Label text="I agree to the Terms and Conditions" class="label--checkbox">
-                  <Checkbox groupname="group_1" />
-                </Label>
+                <Checkbox groupname="group_1" text="I agree to the Terms and Conditions" />
               </fieldset>
 
               <ButtonGroup alignment="left">

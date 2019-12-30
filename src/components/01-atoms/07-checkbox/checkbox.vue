@@ -1,9 +1,10 @@
 <template>
 
-  <div :class="classes" >
-    <input type="checkbox" :name="groupname" />
+  <label :class="classes">
+    <span class="label_text">{{text}}</span>
+    <input type="checkbox" />
     <em></em>
-  </div>
+  </label>
 
 </template>
 
@@ -15,14 +16,14 @@
         type: String,
         default: "",
       },
-      groupname: {
+      text: {
         type: String,
         required: true
       }
     },
     computed: {
       classes() {
-        return `checkbox ${this.classList}`;  
+        return `label checkbox ${this.classList}`;  
       },
     },
     methods: {
